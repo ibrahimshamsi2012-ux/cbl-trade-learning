@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App'; // This imports the main App component
 
-// IMPORTANT: The line 'import "./index.css";' was removed here. 
-// This resolves the Vercel "Module not found" error, as your app uses Tailwind CSS, not a separate index.css file.
+// The problematic 'import "./index.css";' has been explicitly REMOVED here. 
+// This resolves the Vercel "Module not found" compilation error.
 
 const rootElement = document.getElementById('root');
 
