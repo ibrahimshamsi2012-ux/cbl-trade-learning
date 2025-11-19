@@ -1,15 +1,18 @@
 {
   "version": 2,
-  "build": {
-    "env": {
-      "GENERATE_SOURCEMAP": "false",
-      "CI": "false"
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "build/index.html"
+      "dest": "/build/$1"
     }
   ]
 }
