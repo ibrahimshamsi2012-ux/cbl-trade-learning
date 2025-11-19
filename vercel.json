@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "build": {
+    "env": {
+      "GENERATE_SOURCEMAP": "false",
+      "CI": "false"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "build/index.html"
+    }
+  ]
+}
